@@ -4,7 +4,7 @@ For example, if you were given "Turing is the best", return "Turing Is The Best"
 
 consider the data: 
 - string 
-- string method .split & .substring
+- string method .split, .substring, .join (returns an array as a string)
 - array
 
 
@@ -16,11 +16,14 @@ break it down:
 2) declare a variable named words and use the .split method => this returns an array
 3) loop over the array and capitalize the first letter of each word 
 4) use the substring method 
-4) join the words into one string
+4) use the .join method to join the words into one string
 
 
 research: 
 - https://www.freecodecamp.org/news/how-to-capitalize-words-in-javascript/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 start coding:
 stuck?
 Refactor:
@@ -36,4 +39,5 @@ for (let i = 0; i < words.length; i++) {
 }
 
 console.log(words.join(" "));
+
 
