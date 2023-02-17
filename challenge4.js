@@ -20,8 +20,6 @@ break it down:
 research: 
 -MDN (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 start coding:
-stuck?
-Refactor:
 */
 
 var randomVerbs = ["talking", "try", "counting", "reach", "coding"];
@@ -31,3 +29,19 @@ for (var i = 0; i < randomVerbs.length; i++) {
         console.log(randomVerbs[i]);
     }
 }
+
+
+// REFACTORED CODE W/ FUNCTION
+
+var randomVerbs2 = ["grinding", "respecting", "count", "reaching", "balance"];
+
+function processArray(params) {
+    for (var i = 0; i < params.length; i++) {
+        if (params[i].includes("ing")) {
+            console.log(params[i]);
+        }
+    }
+}
+
+processArray(randomVerbs);
+processArray(randomVerbs2);

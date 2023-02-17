@@ -25,13 +25,10 @@ research:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 start coding:
-stuck?
-Refactor:
 */
 
-
 var randomSentence = "i love to code";
-const words = randomSentence.split(" ");
+var words = randomSentence.split(" ");
 // console.log(words); // this returns an array => [ 'i', 'love', 'to', 'code' ]
 
 for (let i = 0; i < words.length; i++) {
@@ -39,5 +36,24 @@ for (let i = 0; i < words.length; i++) {
 }
 
 console.log(words.join(" "));
+
+
+// REFACTORED CODE W/ FUNCTION
+
+var randomSentence2 = "i love surfing in the pacific ocean";
+
+function processArray(params) {
+    var splitString = params.split(" ");
+        for (let i = 0; i < splitString.length; i++) {
+            splitString[i] = splitString[i][0].toUpperCase() + splitString[i].substring(1);
+    }
+    console.log(splitString.join(" "));
+}
+
+processArray(randomSentence);
+processArray(randomSentence2);
+
+
+
 
 

@@ -15,14 +15,26 @@ break it down:
 3) use a the string method (.toLowerCase) to print all words in lowercase letters
 
 research:
-
-start coding:
-stuck?
-Refactor:
 */
 
-var locations = ["Paris", "Berlin", "Vancouver", "New York", "Delhi"];
+//start coding:
+
+var locations = ["PaRis", "BeRin", "VanCOUver", "NeW YorK", "DelHi"];
 
 for (var i = 0; i < locations.length; i++) {
     console.log(locations[i].toLowerCase());
 }
+
+
+// REFACTORED CODE W/ FUNCTION
+var snowLocations = ["JacKSon HOLe", "British ColumBia", "JaPan", "Alaska", "PaRK CiTy"];
+var traveledLocations = ["MyanMAr", "LAoS", "ThaILanD", "BerLIN", "Mexico"];
+
+function processArray(params) {
+    for (var i = 0; i < params.length; i++) {
+        console.log(params[i].toLowerCase());
+    }
+}
+
+processArray(snowLocations);
+processArray(traveledLocations);
